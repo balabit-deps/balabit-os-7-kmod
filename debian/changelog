@@ -1,3 +1,9 @@
+kmod (24-1ubuntu3.1) bionic; urgency=medium
+
+  * Remove i2c_i801 from d/modprobe.d/blacklist.conf. (LP: #1786574)
+
+ -- Michael Hudson-Doyle <michael.hudson@ubuntu.com>  Wed, 24 Oct 2018 12:20:23 +1300
+
 kmod (24-1ubuntu3) bionic; urgency=medium
 
   * Remove /etc/modprobe.d/mlx4.conf: The kernel module mlx4_core will
