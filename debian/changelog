@@ -1,3 +1,10 @@
+kmod (24-1ubuntu3.2) bionic; urgency=medium
+
+  * Add i2c_i801 back to d/modprobe.d/blacklist.conf again due to regressions.
+    (LP: #1802689, #1802135)
+
+ -- Michael Hudson-Doyle <michael.hudson@ubuntu.com>  Tue, 13 Nov 2018 10:54:37 +1300
+
 kmod (24-1ubuntu3.1) bionic; urgency=medium
 
   * Remove i2c_i801 from d/modprobe.d/blacklist.conf. (LP: #1786574)
