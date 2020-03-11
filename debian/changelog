@@ -1,3 +1,13 @@
+kmod (24-1ubuntu3.3) bionic; urgency=medium
+
+  * d/p/verbose_missing_bin: drop this patch to avoid spurious missing
+    file messages when running depmod -a for the first time in recent
+    kernels (>= 5.3.x) (LP: #1864992)
+  * Removed --add-udeb from dh_makeshlibs, since libkmod2-udeb does not
+    actually contain a library. (Closes: #939779)
+
+ -- Rafael David Tinoco <rafaeldtinoco@ubuntu.com>  Wed, 11 Mar 2020 19:37:06 +0000
+
 kmod (24-1ubuntu3.2) bionic; urgency=medium
 
   * Add i2c_i801 back to d/modprobe.d/blacklist.conf again due to regressions.
