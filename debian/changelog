@@ -1,3 +1,11 @@
+kmod (24-1ubuntu3.4) bionic; urgency=medium
+
+  * Remove bochs-drm from d/modprobe.d/blacklist-framebuffer.conf
+    to fix garbled screen with EFI based QEMU/KVM virtual machines
+    which use VGA=std video devices. (LP: #1872863)
+
+ -- Matthew Ruffell <matthew.ruffell@canonical.com>  Thu, 09 Apr 2020 16:03:35 +1200
+
 kmod (24-1ubuntu3.3) bionic; urgency=medium
 
   * d/p/verbose_missing_bin: drop this patch to avoid spurious missing
