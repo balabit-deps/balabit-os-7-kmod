@@ -1,3 +1,11 @@
+kmod (24-1ubuntu3.5) bionic; urgency=medium
+
+  * Re-introduce --add-udeb=libkmod2-udeb to dh_makeshlibs.
+    Fixes d-i FTBFS due to udev-udeb depending on libkmod2
+    instead of libkmod2-udeb. (LP: #1889297)
+
+ -- Mauricio Faria de Oliveira <mfo@canonical.com>  Tue, 28 Jul 2020 11:46:39 -0300
+
 kmod (24-1ubuntu3.4) bionic; urgency=medium
 
   * Remove bochs-drm from d/modprobe.d/blacklist-framebuffer.conf
